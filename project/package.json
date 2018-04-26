@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "chalk": "2.3.1",
+    "express": "4.16.2",
+    "cron": "1.3.0",
+    "forever": "^0.15.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "AM",
+  "license": "ISC",
+  "description": ""
+}
