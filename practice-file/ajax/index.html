@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+</head>
+<body>
+
+    <div id="div1"><h2></h2></div>
+
+    <button id="btn">Get Content</button>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+       
+            $("#btn").click(function(){
+                $('#div1').empty();
+                $.get('/get-info', function(data){
+                    $('#div1').append(data);
+                })
+            });
+    
+    </script>
+
+</body>
+</html>
